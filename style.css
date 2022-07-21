@@ -1,0 +1,314 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* banners styles */
+
+.container{
+    width: 1300px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.banners{
+    display: flex;
+    flex-direction: row;
+    grid-row-gap: 30px;
+
+}
+
+.banner-details{
+    width: 400px;
+    height: 424px;
+    margin-left: 150px;
+    margin-top: 61px;
+}
+
+
+.banner-title{
+    font-size: 40px;
+    color: white;
+    
+}
+.banner-paragraph{
+    color: white;
+    font-weight: 200px;
+    font-size: 16px;
+}
+.watch-live button{
+    width: 187px;
+    height: 56px;
+    background-color:  #DD0000;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.marcelo img{
+    width: 419px;
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+
+
+/* .......blogs part........ */
+.container-2{
+    width: 1300px;
+    /* height: 400px; */
+    margin-top: 30px;
+}
+.blogs{
+    display: flex;
+    flex-direction: row;
+}
+
+.side-menu{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: #161616;
+    border-radius: 10px;
+}
+
+.all-group{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.all-group:hover{
+    background-color: #DD0000;
+    color: white;
+}
+.upcoming{
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+.upcoming:hover{
+    background-color: #DD0000;
+    color: white;
+}
+.blog-btn{
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+
+.blog-btn:hover{
+    background-color: #DD0000;
+    color: white;
+}
+
+.blog-part{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+    
+}
+.blog-1{
+    width: 312px;
+    
+    border: 1px solid rgb(170, 168, 168);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.transfer{
+    width: 100px;
+    height: 32px;
+    margin-left: 10px;
+}
+.news{
+    margin-left: 10px;
+}
+.news-item{
+    display: flex;
+    margin-left: 10px;
+}
+
+.news-comment{
+    margin-left: 30px;
+}
+
+.comment{
+    color: #161616;
+}
+
+.view-all{
+    text-align: center;
+}
+.view-btn{
+    width: 90px;
+    height: 40px;
+    background-color: #DD0000;
+    color: aliceblue;
+    border-radius: 10px;
+    display: none;
+}
+
+/* .............footer styles.............. */
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: #161616;
+}
+
+.goal{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  }
+  
+  .navigation li {
+    float: left;
+    text-align: center;
+  }
+  
+ .navigation li a {
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* second website */
+
+.schedule{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+    
+}
+.schedule-blog{
+    
+    width: 312px;
+    border: 1px solid rgb(170, 168, 168);
+    border-radius: 10px;
+    margin-left: 20px;
+}
+.flags{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.team-name{
+    text-align: center;
+}
+.date{
+    text-align: center;
+}
+
+  
+/* Media Queries */
+
+
+  /* tablet device */
+
+@media only screen and (min-width:688px) and (max-width: 992px) {
+
+    .container, .container-2{
+        width: 100%;
+    }
+
+    .banners, .blog-part, .schedule{
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+    }
+
+    .blogs{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-menu{
+        width: 100%;
+        background-color: white;
+        border: none;
+    }
+
+    .view-btn{
+        display: inline;
+    }
+    
+    
+    
+}
+
+/* mobile devices */
+
+@media only screen and (max-width:688px){
+
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .container-2{
+        width: 100%;
+    }
+
+    .banners{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .blog-part, .schedule{
+        grid-template-columns: repeat(1, 1fr);       
+    }
+
+    .blogs{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-menu{
+        width: 100%;
+        background-color: white;
+        border: none;
+    }
+
+}
